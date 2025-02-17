@@ -641,7 +641,7 @@ section {
     gap: 1rem;
     & h3 {
       font-size: var(--medium);
-      flex-basis: 90%;
+      flex-basis: 85%;
       font-weight: 500;
     }
     & span {
@@ -872,9 +872,13 @@ footer {
     & h3 {
       font-size: var(--small) !important;
       color: #000;
+      align-self: center;
     }
     & .answer {
       font-size: var(--small);
+    }
+    & span{
+      padding: 0 1rem;
     }
   }
   .sec-10 {
