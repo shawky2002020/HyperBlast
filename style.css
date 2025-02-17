@@ -182,7 +182,7 @@ section {
 
 .sec-1 {
   position: relative;
-  height: calc(100vh - 9rem);
+  height: calc(100vh - 5rem);
   background-image: radial-gradient(
     circle,
     whitesmoke 2px,
@@ -228,8 +228,8 @@ section {
 
 .sec-1 .sub2 {
   position: absolute;
-  bottom: 10rem;
-  left: 3rem;
+  bottom: 20vh;
+  left: 3vh;
   font-size: var(--medium);
 }
 
