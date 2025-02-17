@@ -519,7 +519,7 @@ section {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 1rem;
+  border-radius: .5rem;
   z-index: -1;
   background: rgba(0, 189, 0, 0.508);
 }
@@ -737,6 +737,7 @@ footer {
   }
   section {
     padding: 20px;
+    height: auto;
     min-height: 100vh;
     & p {
       font-size: var(--small);
@@ -811,8 +812,7 @@ footer {
     }
   }
   .sec-5 {
-    & .sub2 {
-    }
+    
     & .card {
       width: 40% !important;
       & strong {
