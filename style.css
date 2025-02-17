@@ -114,8 +114,8 @@ body {
   position: relative;
   background: linear-gradient(
     rgb(0, 0, 34) 40%,
-    rgb(0, 0, 34) 65%,
-    /* Repeat same color */ whitesmoke 70%,
+    rgb(0, 0, 34) 60%,
+    /* Repeat same color */ whitesmoke 65%,
     whitesmoke 90%,
     /* Repeat same color */ rgba(0, 0, 34, 0.156) 95%
   );
