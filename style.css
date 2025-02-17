@@ -439,8 +439,7 @@ section {
     background-color: green;
   }
   & .price {
-    color: green !important;
-    text-shadow: 2px 2px 5px whitesmoke;
+    color: whitesmoke !important;
   }
 }
 
