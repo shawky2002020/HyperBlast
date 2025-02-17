@@ -375,6 +375,7 @@ section {
 }
 
 .sec-5 {
+  height: auto;
   padding: 1rem;
   & .content {
     display: flex;
@@ -385,9 +386,10 @@ section {
       justify-content: center;
       gap: 1rem;
       & .card {
+        min-width: 10rem;
+        max-width: 40vw;
         flex: 1;
         position: relative;
-        /* width: 30%; */
         overflow: hidden;
         backdrop-filter: blur(100px);
         box-shadow: 0px 2px 10px pink;
@@ -735,7 +737,7 @@ footer {
   }
   section {
     padding: 20px;
-    height: auto;
+    min-height: 100vh;
     & p {
       font-size: var(--small);
     }
@@ -810,10 +812,9 @@ footer {
   }
   .sec-5 {
     & .sub2 {
-      display: grid !important;
-      grid-template-columns: 1fr 1fr;
     }
     & .card {
+      width: 40% !important;
       & strong {
         font-size: var(--normal);
       }
