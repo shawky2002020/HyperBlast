@@ -43,19 +43,20 @@ html {
 body {
   height: 100%;
   position: relative;
+  background: linear-gradient(
+    rgb(0, 0, 34) 40%,
+    rgb(0, 0, 34) 65%,
+    /* Repeat same color */ whitesmoke 70%,
+    whitesmoke 90%,
+    /* Repeat same color */ rgba(0, 0, 34, 0.156) 95%
+  );
+
   overflow: hidden;
 }
 
 .bg {
   position: absolute;
   top: 0;
-  background: linear-gradient(
-    rgb(0, 0, 34) 40%,
-    rgb(0, 0, 34) 45%,
-    /* Repeat same color */ whitesmoke 50%,
-    whitesmoke 90%,
-    /* Repeat same color */ rgba(0, 0, 34, 0.156) 95%
-  );
   z-index: -2;
 }
 
@@ -657,8 +658,14 @@ footer {
 
 /*RESPONSIVNESS */
 
-@media (max-width: 575px) {
+@media (max-width: 1000px) {
   /* Extra Small (Phones) */
+  body{
+    overflow: auto;
+  }
+  #bg-svg{
+    transform: translateX(-60rem) translateY(-4rem);
+  }
   section {
     padding: 20px;
     height: auto;
@@ -685,25 +692,20 @@ footer {
   .sec-1 {
     display: flex;
     min-height: 100vh;
-    & .container{
-      width: 100%;
-      display: flex;
-      flex-flow:  column nowrap;
-      justify-content:space-around;
-      align-items: center;
-    }
-
     & h1 {
-      font-size:var(--big);
-      line-height: 2rem;
+      font-size:var(--huge);
+      line-height: 3rem;
+    }
+    .sub1{
+      position: absolute !important;
+      right: 10vw;
+      top: 20vh;
     }
     & #non-anim {
       top: 2.5rem;
     }
     & .sub2 {
       font-size: var(--normal);
-      position: relative;
-      width: 100%;
     }
   }
   .sec-2 {
@@ -823,16 +825,4 @@ footer {
       display: none;
     }
   }
-}
-@media (min-width: 576px) and (max-width: 767px) {
-  /* Small (Tablets) */
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  /* Medium (Laptops) */
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  /* Large (Desktops) */
-}
-@media (min-width: 1200px) {
-  /* Extra Large Screens */
 }
